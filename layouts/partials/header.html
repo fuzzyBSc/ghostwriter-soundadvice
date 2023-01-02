@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html{{ if .Site.Params.opengraph }} prefix="og: http://ogp.me/ns#"{{ end }}>
+<html xmlns="http://www.w3.org/1999/html"/>{{ if .Site.Params.opengraph }} prefix="og: http://ogp.me/ns#"{{ end }}>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="{{ .Site.BaseURL }}dist/site.css">
         <link rel="stylesheet" href="{{ .Site.BaseURL }}dist/syntax.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
-	<script src="https://kit.fontawesome.com/{{ .Site.Params.fontawesome }}.js" crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="https://kit.fontawesome.com/{{ .Site.Params.fontawesome }}.js" crossorigin="anonymous">
         {{ if .OutputFormats.Get "RSS" }}
             <link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="application/rss+xml">
         {{ end }}
