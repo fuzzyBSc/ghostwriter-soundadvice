@@ -47,7 +47,7 @@ params:
   stackoverflow: "https://stackoverflow.com/users/XXX/YYY"
   facebook: "https://www.facebook.com/username"
   email: XXX@example.com
-  opengraph: true
+  opengraph: false
   shareTwitter: true
   rss: true
   shareFacebook: true
