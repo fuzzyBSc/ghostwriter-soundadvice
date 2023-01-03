@@ -10,13 +10,6 @@
     {{ end -}}
 
     <div class="share">
-        {{- if .Site.Params.validator }}
-            <a class="icon-w3c" href="https://validator.w3.org/nu/?doc={{ .Permalink }}"
-                onclick="window.open(this.href, 'w3c-validator', 'width=550,height=235');return false;" aria-label="Validate HTML">
-	            <i class="fa-solid fa-earth-oceania" aria-hidden="true"></i>
-            </a>
-        {{- end }}
-
         {{- if .Site.Params.shareTwitter }}
             <a class="icon-twitter" href="https://twitter.com/share?text={{ .Title }}&url={{ .Permalink }}"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" aria-label="Share on Twitter">

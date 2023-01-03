@@ -7,6 +7,12 @@
                     <h1 class="site-title">
                         <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
                     </h1>
+                    {{- if .Site.Params.validator }}
+                        <a class="button-square icon-w3c" href="https://validator.w3.org/nu/?doc={{ .Permalink }}"
+                           onclick="window.open(this.href, 'w3c-validator', 'width=550,height=235');return false;" aria-label="Validate HTML">
+                            <i class="fa-solid fa-earth-oceania" aria-hidden="true"></i>
+                        </a>
+                    {{- end }}
                     <a class="button-square button-jump-top js-jump-top" href="#" aria-label="Back to Top">
                         <i class="fa fa-angle-up" aria-hidden="true"></i>
                     </a>
