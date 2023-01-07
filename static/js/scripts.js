@@ -10,9 +10,10 @@ jQuery(function ($) {
     /* Scroll To Top */
     /* ============================================================ */
 
-    $('.js-jump-top').on('click', function (e) {
-        e.preventDefault();
-
-        $('html, body').animate({ 'scrollTop': 0 });
-    });
+    document.querySelectorAll('.js-jump-top').forEach(element => {
+        element.onclick = function(event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    })
 });
